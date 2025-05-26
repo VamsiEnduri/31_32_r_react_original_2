@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {useNavigate} from "react-router-dom"
+import {useNavigate,Link} from "react-router-dom"
 import {signInWithEmailAndPassword} from "firebase/auth"
 import { authentication } from '../../ConfigFirebase/config'
 import {Form} from "react-bootstrap"
@@ -59,7 +59,8 @@ catch(err){
           <option value="recruiter">Recruiter</option>
           <option value="job_seeker">JobSeeker</option>
         </Form.Select>
-        <button type="submit">signup</button>
+        <button type="submit">Login</button>
+        <Link to="/signup">go to SignUpForm</Link>
       </Form>
     </div>
   )

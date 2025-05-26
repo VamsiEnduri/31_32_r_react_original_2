@@ -6,6 +6,7 @@ import Signup from './Pages/SignUp/Signup'
 import RecruiterDashBoard from './DashBoards/RecruiterDashBoard/RecruiterDashBoard'
 import PostJob from './DashBoards/RecruiterDashBoard/PostJob/PostJob'
 import MyPostings from './DashBoards/RecruiterDashBoard/MyPostings/MyPostings'
+import JobSeekerDashBoard from './DashBoards/JobSeekerDashBoard/JobSeekerDashBoard'
 const App = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="post_job" element={<PostJob />}/>
                 <Route path="my_postings" element={<MyPostings />}/>
         </Route>
+        <Route path="/job_seekerDashBoard" element={<JobSeekerDashBoard />}></Route>
       </Routes>
     </div>
   )

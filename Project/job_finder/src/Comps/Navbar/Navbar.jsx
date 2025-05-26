@@ -5,7 +5,7 @@ import { signOut, getAuth } from "firebase/auth";
 const NavbarComp = () => {
   const navigate=useNavigate()
 
-  const loggedinUser = JSON.parse(localStorage.getItem("loggedInRecruiter"));
+  const loggedinUser = JSON.parse(localStorage.getItem("loggedInRecruiter")) || JSON.parse(localStorage.getItem("loggedInJobSeeker"));
   const handleLogout = async () => {
     const auth = getAuth();
     try {
