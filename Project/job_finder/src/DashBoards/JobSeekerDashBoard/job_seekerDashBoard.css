@@ -1,0 +1,9 @@
+.job_seekerDashBoard{
+    display: flex;
+    gap: 20px;
+
+}
+.jobFilters{
+    height: 90vh;
+    width: 20%;
+}
