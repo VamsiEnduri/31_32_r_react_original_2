@@ -32,6 +32,9 @@ const NavbarComp = () => {
               {loggedinUser ? (
                 <>
                   <button onClick={handleLogout}>logout</button>
+
+                  <button onClick={()=>navigate("/job_seekerDashBoard/savedJobs")}>SavedJobs</button>
+                   <button onClick={()=>navigate("/job_seekerDashBoard/appliedJobs")}>AppliedJobs</button>
                 </>
               ) : (
                 <>
